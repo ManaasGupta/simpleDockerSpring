@@ -1,6 +1,12 @@
 # Use a base image with JDK and Maven pre-installed
 FROM maven:3.8.4-openjdk-17 AS builder
 
+
+# Meta Data
+LABEL Aurthor="Manas Gupta"
+LABEL GitHub Username="ManaasGupta"
+LABEL Date="29/2/2024"
+
 # Set the working directory in the container
 WORKDIR /usr
 
