@@ -20,7 +20,7 @@ WORKDIR /usr
 COPY --from=builder /usr/target/*.jar app.jar
 
 # Expose the port the app runs on
-EXPOSE 9091
+EXPOSE 9090
 
 # Command to run the application
 CMD ["java", "-jar", "app.jar"]
